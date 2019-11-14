@@ -1,4 +1,4 @@
-# Do it Vue Study Router 부문 부터 진행
+# Do it! Beginning Vue.js 라우터 부분 부터 
 
 ※ Vue 의 Http 통신
 
