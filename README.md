@@ -1,7 +1,7 @@
 # Do it! Beginning Vue.js 라우터 부분 부터
 
 
-4장
+4장. 라우터 & HTTP 통신
 -
 >[4-1 뷰 라우터 실습](https://github.com/gwkim9444/Vue_Study/blob/master/01_nested.html/)  
 >[4-2 네스티드 라우터 구현하기](https://github.com/gwkim9444/Vue_Study/blob/master/02_Named_view.html/)  
@@ -46,3 +46,20 @@
 >Using cdn:  
 ><script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+
+5장. 뷰 템플릿
+-
+
+※ Vue 템플릿이란?
+HTML,CSS 등의 마크업 등의 마크업 속성과 뷰 인스턴스에서 정의한 데이터 및 로직들을 연결하여 사용자가 브라우저에 볼수있는 형태의 HTML로 변환시켜 줌  
+>템플릿 속성을 사용하는 방법
+>＃ ES5 기준  
+><script>  
+> new Vue({   
+>     template : '<p>Hello {{message}}</p>'  
+>   });
+></script>  
+
+여기서 template : <p>Hello {{message}}</p> 같은 코드가 Vue의 템플릿을 의미함
+template을 통한 생성은 해당 인스턴스가 완전히 생성되고 난 후에 전체 Form이 붙게 되어있음  
+일반적으로는 template 이 없다면 모든 태그가 형성 된 후 {{message}} 영역이 Vue에서 생성된 message로 대체되도록 설계되어 있음.  
