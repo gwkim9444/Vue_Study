@@ -10,18 +10,16 @@
 >[4-5 액시오스로 데이터 받아오기](https://github.com/gwkim9444/Vue_Study/blob/master/05.Axios.html/)  
 
 
-#※ Vue 의 Http 통신
+※ Vue 의 Http 통신
 
 >1. 웹 앱에서의 HTTP 통신은 정적인 웹을 탈피하기위해 필수요건으로 자리잡음  
 >Ex) 대표적인 Case → Jquery Ajax Library OR JS 내의 XML Object   
-
-2. Vue에서는 HTTP 통신을 하기위한 Ajax 라이브러리를 제공하고있음.   
-Vue 내에서 필수 프레임워크로 자리잡은 'Axios(액시오스)' 가 Ajax 라이브러리로 활용됨
-
-보통선에서 Vue 리소스 역시 초기 코어팀에서 공식적으로 지원했던 HTTP 통신관련 라이브러리 이나, 추세상 Axios 라이브러리를 더 많이 사용
-＃2019년 11월 15일 기준 
-Axios Git Star 개수 : 66.5k
-Vue resource 개수 : 9.6k
+>2. Vue에서는 HTTP 통신을 하기위한 Ajax 라이브러리를 제공하고있음.   
+>Vue 내에서 필수 프레임워크로 자리잡은 'Axios(액시오스)' 가 Ajax 라이브러리로 활용됨
+>보통선에서 Vue 리소스 역시 초기 코어팀에서 공식적으로 지원했던 HTTP 통신관련 라이브러리 이나, 추세상 Axios 라이브러리를 더 많이 사용  
+＃2019년 11월 15일 기준  
+>Axios Git Star 개수 : 66.5k  
+>Vue resource 개수 : 9.6k  
 
 ＃ Axios란? 
 Promise based HTTP client for the browser and node.js 라고 명시하고있음.
