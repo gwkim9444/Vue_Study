@@ -70,3 +70,9 @@ HTML,CSS 등의 마크업 등의 마크업 속성과 뷰 인스턴스에서 정�
 >3.디렉티브  
 >4.이벤트 처리  
 >5.고급 템플릿 기법  
+
+#### v-bind  
+>v-bind는 id,class,style 등의 HTML의 Attributes 값에 Vue Data 값을 연결할 때 사용하는 Vue만의 데이터 연결 방식이다.  
+>형식은 v-bind 속성으로 지정할 HTML 속성이나 props 속성 앞에 접두사로 붙여준다.  
+><p v-bind:id="idA">Vue id</p>를 <p :id="idA">Vue id</p>로 사용 할수도 있다.(But, v-bind:id="idA"를 권장)    
+>HTML 표준과 구분하기 위해 가급적이면 vue를 사용하는 티를 팍팍 내기위해 v-bind 속성을 꼭 붙여주자.  
