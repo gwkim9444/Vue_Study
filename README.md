@@ -60,6 +60,6 @@ HTML,CSS 등의 마크업 등의 마크업 속성과 뷰 인스턴스에서 정�
 >   });
 ></script>  
 
-여기서 template : <p>Hello {{message}}</p> 같은 코드가 Vue의 템플릿을 의미함
-template을 통한 생성은 해당 인스턴스가 완전히 생성되고 난 후에 전체 Form이 붙게 되어있음  
-일반적으로는 template 이 없다면 모든 태그가 형성 된 후 {{message}} 영역이 Vue에서 생성된 message로 대체되도록 설계되어 있음.  
+1. template:<p>Hello {{message}}</p> 같은 코드가 Vue의 템플릿을 의미함
+2. template을 통한 생성은 해당 인스턴스가 완전히 생성되고 난 후에 전체 Form이 붙게 됨. 
+3. template 이 없다면 모든 태그가 형성 된 후 {{message}} 영역이 Vue에서 생성된 message로 대체되도록 설계되어 있음.  
