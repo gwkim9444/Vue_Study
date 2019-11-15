@@ -22,26 +22,26 @@
 >Vue resource 개수 : 9.6k  
 
 ＃ Axios란? 
-Promise based HTTP client for the browser and node.js 라고 명시하고있음.
-비동기 기반 JS 로직 처리에서 데이터 통신 과 관련된 로직처리를 Promise 기반으로 동작 시키는데 집중하였고, Axios 역시 Promise API 를 제공
+>Promise based HTTP client for the browser and node.js 라고 명시하고있음.  
+>비동기 기반 JS 로직 처리에서 데이터 통신 과 관련된 로직처리를 Promise 기반으로 동작 시키는데 집중하였고, Axios 역시 Promise API 를 제공  
 
 ＃ Promise 기반 API 란?
 
-Promise는 비동기 로직 처리에 유용한 JS 객체를 의미함.
-JS는 기본적으로 싱글 쓰레드 기반으로 스크립트를 처리하기에, 특정 로직 처리가 끝날때 까지 기다리지 않는 비동기 방식을 많이 사용하고있음.
-이럴 경우 통신 로직이 다 처리되기도 전에 다른 Event가 처리되어 여러가지 문제(UI 꼬임 및 데이터를 받기도 전에 로직처리 등등)가 발생함.
-따라서 Promise를 통해 완전한 Data 처리가 Browser(Front) 까지 도달했을 때, 그다음 로직처리를 수행 할 수있도록 할 수 있음.
+>Promise는 비동기 로직 처리에 유용한 JS 객체를 의미함.  
+>JS는 기본적으로 싱글 쓰레드 기반으로 스크립트를 처리하기에, 특정 로직 처리가 끝날때 까지 기다리지 않는 비동기 방식을 많이 사용하고있음.  
+>이럴 경우 통신 로직이 다 처리되기도 전에 다른 Event가 처리되어 여러가지 문제(UI 꼬임 및 데이터를 받기도 전에 로직처리 등등)가 발생함.  
+>따라서 Promise를 통해 완전한 Data 처리가 Browser(Front) 까지 도달했을 때, 그다음 로직처리를 수행 할 수있도록 할 수 있음.  
 
 
-＃ Axios 설치 또는 사용 방법
-Using npm:
-$ npm install axios
+＃ Axios 설치 또는 사용 방법  
+>Using npm:  
+>$ npm install axios  
 
-Using bower:
-$ bower install axios
+>Using bower:  
+>$ bower install axios  
 
-Using yarn:
-$ yarn add axios
+>Using yarn:  
+>$ yarn add axios  
 
 Using cdn:
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
