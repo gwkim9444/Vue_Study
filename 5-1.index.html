@@ -7,9 +7,9 @@
     </head>
     <body>
         <div id="app">
-            <p v-bind:id="idA">아이디 바인딩</p>
-            <p v-bind:class="classA">클래스 바인딩</p>
-            <p v-bind:style="styleA">스타일 바인딩</p>
+            <p :id="idA">아이디 바인딩</p>
+            <p :class="classA">클래스 바인딩</p>
+            <p :style="styleA">스타일 바인딩</p>
         </div>
     </body>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -17,7 +17,7 @@
     new Vue({
         el : '#app',
         data : {
-            idA : 10,
+            idA : 10, // Tag 내 해당 매개 변수에 값을 넣을 수 있도록 설계되어있음
             classA : 'container',
             styleA : 'color : blue'
         }

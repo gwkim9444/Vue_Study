@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자바스크립트 표현식</title>
+</head>
+<body>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <div id="app">
+           <!-- {{ var a = 10;}} , 선언문은 데이터 바인딩 적용이 불가--> 
+           <!-- {{ if(true) { return 100; }}} 분기구문은 브라우저 내에서 사용불가(삼항연산으로 대체 가능)-->
+            {{ true ? 100 : 0 }}    
+            {{ reverseMessage }}
+        </div>
+        <script>
+        new Vue({
+            el : '#app',
+            data : {
+                message : 'Hello Vue.js!'
+            },
+            computed: {
+                reverseMessage : function(){
+                    return this.message.split('').reverse().join('');
+                }
+            },
+        });
+        </script>
+    
+</body>
+</html>
