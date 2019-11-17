@@ -66,8 +66,8 @@ HTML,CSS 등의 마크업 등의 마크업 속성과 뷰 인스턴스에서 정�
 
 ### 템플릿에서 사용하는 뷰 속성과 문법
 >[5-1 데이터 바인딩](https://github.com/gwkim9444/Vue_Study/blob/master/5-1.index.html)  
->2.자바스크립트 표현식  
->3.디렉티브  
+>[5-2 자바스크립트 표현식](https://github.com/gwkim9444/Vue_Study/blob/master/5-2.Javascript_Expression.html)    
+>[5-3 디렉티브](https://github.com/gwkim9444/Vue_Study/blob/master/5-3.Javascript_Expression_2.html)    
 >4.이벤트 처리  
 >5.고급 템플릿 기법  
 
