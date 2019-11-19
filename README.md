@@ -94,3 +94,12 @@ Ex) {{ var = a }} , {{ if (true) { return 100 } }}
 >4. __v-on__ : 화면 요소의 이벤트를 감지하여 처리 할 때 사용, 예를들면, v-on:click은 해당 Tag의 클릭 이벤트를 감지하여 특정 메서드를 실행가능.
 >5. __v-model__ : Form에서 주로 사용되는 속성. Form에 입력한 값을 Vue 인스턴스의 데이터와 즉시 동기화 하여 서버에 보내거나 watch 같은 고급 속성을 이용하여 추가 로직 구현이 가능하도록 설게 되어있음 input,select,textarea Tag에만 적용이 가능.  
 
+##### __Vue Directive의 Event 처리__  
+>1.웹 앱에서 사용자 클릭 또는 키보드 이벤트 처리는 당연하다. 뷰 역시 화면에서 발생한 이벤트 처리를 위해 v-on Directive와 method 속성을 활용한다.  
+methods : { Event명 : function(){ ..... };  
+>2.해당 디렉티브 메서드에 parameter(매개변수)를 포함해 전달하는것이 가능하다.  
+
+##### __고급 템플릿 기법__  
+고급 템플릿 기법은 실제 App 개발을 할 때 유용한 Attribute로, 앞에서 배운 Data Binding & Directive와 같은 기본적 문법을 사용한다.  
+>1. __computed__ : 최종 HTML은 Vue 내에서 처리된 데이터를 표기하는 용도로만 쓰인다, 이에 computed는 데이터 연산을 정의하는 영역으로 쓰인다.  
+>해당 링크 : [5-5 고급템플릿기법](https://github.com/gwkim9444/Vue_Study/blob/master/5-3.Javascript_Expression_2.html)  
