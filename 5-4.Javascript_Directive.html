@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript directives</title>
+</head>
+<body>
+    <div id="app">
+        <a v-if="flag">두잇 Vue.js</a>
+        <ul>
+            <!-- for a in array 가 먹히도록 되어있다 attr 안에 간단한 js 적용이 가능-->
+            <li v-for="system in systems">{{ system }}</li>
+        </ul>
+        <p v-show="flag">두잇</p>
+        <h5 v-bind:id="uid">뷰 입문서</h5>
+        <button v-on:click="popupAlert">경고 창 버튼</button>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+    new Vue({
+        el : "#app",
+        data :{
+            flag : true,//show 두잇 Vue.js or not
+            systems : ['android','ios','window'], 
+            uid : 10 // give id in v-bind:id attribute
+        },
+        methods :{
+            popupAlert : function(){
+                return alert("경고 창 표시");
+            }
+        }
+    });
+    </script>
+</body>
+</html>
