@@ -65,8 +65,8 @@ HTML,CSS 등의 마크업 등의 마크업 속성과 뷰 인스턴스에서 정�
 >[5-1 데이터 바인딩](https://github.com/gwkim9444/Vue_Study/blob/master/5-1.index.html)  
 >[5-2 자바스크립트 표현식](https://github.com/gwkim9444/Vue_Study/blob/master/5-2.Javascript_Expression.html)    
 >[5-3 디렉티브](https://github.com/gwkim9444/Vue_Study/blob/master/5-3.Javascript_Expression_2.html)    
->4.이벤트 처리  
->5.고급 템플릿 기법  
+>[5-4 이벤트 처리](https://github.com/gwkim9444/Vue_Study/blob/master/5-4.Javascript_Directive.html)  
+>[5-5 고급 템플릿 기법](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_computed.html)  
 
 #### __v-bind__  
 >1.v-bind는 id,class,style 등의 HTML의 Attributes 값에 Vue Data 값을 연결할 때 사용하는 Vue만의 데이터 연결 방식이다.  
@@ -102,4 +102,4 @@ methods : { Event명 : function(){ ..... };
 ##### __고급 템플릿 기법__  
 고급 템플릿 기법은 실제 App 개발을 할 때 유용한 Attribute로, 앞에서 배운 Data Binding & Directive와 같은 기본적 문법을 사용한다.  
 >1. __computed__ : 최종 HTML은 Vue 내에서 처리된 데이터를 표기하는 용도로만 쓰인다, 이에 computed는 데이터 연산을 정의하는 영역으로 쓰인다.  
->해당 링크 : [5-5 고급템플릿기법](https://github.com/gwkim9444/Vue_Study/blob/master/5-3.Javascript_Expression_2.html)  
+> 해당 링크 : [5-5 고급템플릿기법](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_computed.html)  
