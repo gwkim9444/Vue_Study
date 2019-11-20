@@ -105,8 +105,8 @@ methods : { Event명 : function(){ ..... };
 > 해당 링크 : [5-5 고급템플릿기법](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_computed.html)   
 > __Vue Computed는 Vue methods와 차이__  
 > computed 속성은 해당 데이터 값이 변경되면 자동적으로 수행되는것이고, methods 속성은 해당 속성을 호출할 때 해당 로직이 수행되는것을 의미한다.  
-> 캐싱면에서 따진다면 methods속성은 수행 할 때마다 연산을 하기 때문에 별도 캐싱을 하지 않지만, computed속성은 데이터가 변경되지 않는 한 이전의 계산 값을 가지고 있다가 필요할 때 바로 반환 해 줌.
+> 캐싱면에서 따진다면 methods속성은 수행 할 때마다 연산을 하기 때문에 별도 캐싱을 하지 않지만, computed속성은 데이터가 변경되지 않는 한 이전의 계산 값을 가지고 있다가 필요할 때 바로 반환 해 줌.  
 해당 링크 : [5-5 computed와 methods의 차이](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_watch.html)   
->2. __watch__ : 데이터 변화를 감지하여 자동으로 특정 로직을 수행함. computed 속성과 유사하나, computed 속성은 내장 API를 활용한 간단한 연산에 적합하고, watch 속성은 데이터 호출과 같이 시간이 상대적으로 더 많이 소모되는 비동기 처리에 적합함.  
->__watch는 화면단의 데이터를 스크립트단의 특정 데이터와 일치시켜줌으로서, 동적인 Web을 연출하는데 적합하다.__
+>2. __watch__ : 데이터 변화를 감지하여 자동으로 특정 로직을 수행함. computed 속성과 유사하나, computed 속성은 내장 API를 활용한 간단한 연산에 적합하고, watch 속성은 데이터 호출과 같이 시간이 상대적으로 더 많이 소모되는 비동기 처리에 적합함.   
+>__watch는 화면단의 데이터를 스크립트단의 특정 데이터와 일치시켜줌으로서, 동적인 Web을 연출하는데 적합하다.__  
 해당 링크 : [5-5 Vue watch](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_watch_2.html)
