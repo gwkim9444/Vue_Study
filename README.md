@@ -102,4 +102,8 @@ methods : { Event명 : function(){ ..... };
 ##### __고급 템플릿 기법__  
 고급 템플릿 기법은 실제 App 개발을 할 때 유용한 Attribute로, 앞에서 배운 Data Binding & Directive와 같은 기본적 문법을 사용한다.  
 >1. __computed__ : 최종 HTML은 Vue 내에서 처리된 데이터를 표기하는 용도로만 쓰인다, 이에 computed는 데이터 연산을 정의하는 영역으로 쓰인다.  
-> 해당 링크 : [5-5 고급템플릿기법](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_computed.html)  
+> 해당 링크 : [5-5 고급템플릿기법](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_computed.html)   
+> __Vue Computed는 Vue methods와 차이__  
+> computed 속성은 해당 데이터 값이 변경되면 자동적으로 수행되는것이고, methods 속성은 해당 속성을 호출할 때 해당 로직이 수행되는것을 의미한다.  
+> 캐싱면에서 따진다면 methods속성은 수행 할 때마다 연산을 하기 때문에 별도 캐싱을 하지 않지만, computed속성은 데이터가 변경되지 않는 한 이전의 계산 값을 가지고 있다가 필요할 때 바로 반환 해 줌.
+>
