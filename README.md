@@ -110,3 +110,15 @@ methods : { Event명 : function(){ ..... };
 >2. __watch__ : 데이터 변화를 감지하여 자동으로 특정 로직을 수행함. computed 속성과 유사하나, computed 속성은 내장 API를 활용한 간단한 연산에 적합하고, watch 속성은 데이터 호출과 같이 시간이 상대적으로 더 많이 소모되는 비동기 처리에 적합함.   
 >__watch는 화면단의 데이터를 스크립트단의 특정 데이터와 일치시켜줌으로서, 동적인 Web을 연출하는데 적합하다.__  
 해당 링크 : [5-5 Vue watch](https://github.com/gwkim9444/Vue_Study/blob/master/5-5.Vue_watch_2.html)
+
+##### __싱글 파일 컴포넌트(.vue) 확장자 파일구성__
+뷰 프로젝트를 하는데 있어서 싱글파일컴포넌트 체계는 Front 구성요소에서 필수적인 요건을 지니고 있다. 싱글파일컴포넌트 체계는 .vue 파일로 프로젝트 구조를 구성하는 방식을 의미한다.  
+>1..vue 파일은 다음과 같은 구조를 지닌다.  
+  
+
+
+Tag | 내용 | 기본값
+---|:---:|---:
+`template` | HTML 태그 내용 | null
+`script` | export default { Javascript 내용 } | null
+`style` | CSS 스타일 내용 | null
