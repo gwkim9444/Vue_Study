@@ -115,14 +115,8 @@ methods : { Event명 : function(){ ..... };
 뷰 프로젝트를 하는데 있어서 싱글파일컴포넌트 체계는 Front 구성요소에서 필수적인 요건을 지니고 있다. 싱글파일컴포넌트 체계는 .vue 파일로 프로젝트 구조를 구성하는 방식을 의미한다.  
 >1..vue 파일은 다음과 같은 구조를 지닌다.  
   
-<template>  
-HTML 태그 내용    
-</template>  
-  
-<script>  
-export default { //Javascript 내용 }  
-</script>  
-  
-<style>  
-/* CSS 스타일 내용 */    
-</style>  
+  | Tag | 내용 |
+|---|:---:|---:|
+| `template` | HTML 태그 내용 |
+| `script` | export default { Javascript 내용 }  | 
+| `style` |  CSS 스타일 내용  | 
