@@ -137,3 +137,11 @@ Tag | 내용 | 기본값
 `vue init browserify-simple` | 브라우저리파이 최소기능을 활용한 프로젝트 구성 방식, 빠른 화면 프로토 타이핑용 |
 `vue init simple` | 최소 뷰 기능만 들어간 HTML 파일 1개 생성 |
 `vue init pwa` | 웹팩 기반의 프로그레시브 웹 앱(PWA,Progressive Web App) 기능을 지원하는 뷰 프로젝트 |
+
+>1.Vue init 디렉터리 생성 후 만들어진 디렉터리 구조는 아래와 같다.  
+
+디렉터리 & 파일 이름 | 내용 | 
+---|:---:|
+`src` | vue 파일을 비롯해 애플리케이션이 동작하는데 필요한 로직이 들어가는 곳 |
+`index.html` | vue로 만든 웹 앱의 시작점. npm run dev 실행 시 로딩되는 파일 |
+`webpack.config.js` | 웹팩 설정파일, 웹팩 빌드를 위해 필요한 로직들을 정의하는 파일 |
