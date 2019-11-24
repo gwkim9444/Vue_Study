@@ -149,7 +149,7 @@ Tag | 내용 | 기본값
 ##### __Vue Loader__  
 뷰 로더는 웹팩에서 지원하는 라이브러리이다. 뷰 로더는 싱글파일 컴포넌트(Vue CLI로 형성한 프로젝트)에서 사용하는 .vue 파일의 내용을 브라우저에서 실행가능한 웹페이지 형태로 변환해 준다.  
   
->1.뷰로더는 위의 Vue 싱글파일 컴포넌트 구조에서 언급된, template,script,style의 내용이 각각 HTML,Javascript,HTML,CSS Code 등에 인식될 수 있도록 Vue 로더가 반환작업을 진행한다.
+>1.뷰로더는 위의 Vue 싱글파일 컴포넌트 구조에서 언급된, template,script,style의 내용이 각각 HTML,Javascript,HTML,CSS Code 등에 인식될 수 있도록 Vue 로더가 반환작업을 진행한다.  
 >2.뷰 로더는 .vue 파일을 javascript 모듈로 변환하고 웹팩 플러그인들은 이를 css,html 파일로 분리 역시 가능하도록 설계되어있다.  
 
 
