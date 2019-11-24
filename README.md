@@ -129,11 +129,11 @@ Tag | 내용 | 기본값
 5장 SUb. Vue CLI
 -
 ##### __Vue init__    
-명령어 | 내용 | - 
----|:---:|---:
-`vue init webpack` | 고급 웹팩 기능을 활용한 프로젝트 구성방식, 테스팅,문법 검사 등을 지원 | -
-`vue init webpack-simple` | 웹팩 최소 기능을 활용한 프로젝트 구성 방식, 빠른 화면 프로토타이핑용 | -
-`vue init browserify` | 고급 브라우저리파이 기능을 활용한 프로젝트 구성 방식, 테스팅, 문법검사 등을 지원 | -
-`vue init browserify-simple` | 브라우저리파이 최소기능을 활용한 프로젝트 구성 방식, 빠른 화면 프로토 타이핑용 | -
-`vue init simple` | 최소 뷰 기능만 들어간 HTML 파일 1개 생성 | -
-`vue init pwa` | 웹팩 기반의 프로그레시브 웹 앱(PWA,Progressive Web App) 기능을 지원하는 뷰 프로젝트 | -
+명령어 | 내용 | 
+---|:---:|
+`vue init webpack` | 고급 웹팩 기능을 활용한 프로젝트 구성방식, 테스팅,문법 검사 등을 지원 |
+`vue init webpack-simple` | 웹팩 최소 기능을 활용한 프로젝트 구성 방식, 빠른 화면 프로토타이핑용 |
+`vue init browserify` | 고급 브라우저리파이 기능을 활용한 프로젝트 구성 방식, 테스팅, 문법검사 등을 지원 |
+`vue init browserify-simple` | 브라우저리파이 최소기능을 활용한 프로젝트 구성 방식, 빠른 화면 프로토 타이핑용 |
+`vue init simple` | 최소 뷰 기능만 들어간 HTML 파일 1개 생성 |
+`vue init pwa` | 웹팩 기반의 프로그레시브 웹 앱(PWA,Progressive Web App) 기능을 지원하는 뷰 프로젝트 |
