@@ -350,7 +350,7 @@ export default {
 
 ### Nuxt.js 의 디렉토리 구조
 ---
-Nuxt.js 프로젝트는 __레이아웃__,__페이지___,__컴포넌트__ 디렉토리로 구성되어있다.  
+Nuxt.js 프로젝트는 __레이아웃__,__페이지__,__컴포넌트__ 디렉토리로 구성되어있다.  
 
 ![Nuxtdir](./img/Nuxtdirectory.png)  
 
