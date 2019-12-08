@@ -347,3 +347,56 @@ export default {
   buildDir: '../nuxt'
 }
 ```
+
+### Nuxt.js 의 디렉토리 구조
+---
+Nuxt.js 프로젝트는 __레이아웃__,__페이지___,__컴포넌트__ 디렉토리로 구성되어있다.  
+
+![Nuxtdir](./img/Nuxtdirectory.png)  
+
+Layout (Default) 컴포넌트 ⟹ Pages 컴포넌트  
+
+아래 코드 예에서는 `layouts/default.vue`에서 `layouts/sections/` 디렉토리 내부 헤더, 푸터를 등록하는 과정을 보여준다.  
+
+```javascript
+layouts/default.vue
+<template>
+  <section>
+    <page-header/>
+    <nuxt/>
+    <page-footer/>
+  </section>
+</template>
+​
+<script>
+import PageHeader from './sections/PageHeader'
+import PageFooter from './sections/PageFooter'
+​
+export default {
+  name: 'Default Layout',
+  components: { PageHeader, PageFooter }
+}
+</script>
+```  
+아래 그림은 pages/ 디렉토리 내부 파일은 기본적으로 `Nuxt.js`에 의해 다이내믹 라우트 되어 각 페이지 뷰가 됩니다.
+
+![Nuxtpage](./img/Nuxtpage.png)   
+
+
+### 디렉토리 구조 및 설정 파일
+
+Nuxt.js App Project dir 구조 및 설정 파일은 다음과 같다.
+
+
+디렉토리 명 | 설명 |
+---|:---:| 
+`layouts` | App을 구성하는 레이아웃을 모두 포함 | 
+`pages` | 내부에 있는 모든 Vue 파일은 라우팅 가능 |   
+`components` | 내부에 Vue 컴포넌트 파일 포함 |   
+`pages` | 내부에 있는 모든 Vue 파일은 라우팅 가능 |   
+`assets` | 컴파일 되지 않는 정적 에셋(CSS,JS,Sass 등)을 포함 |   
+`plugins` | Vue 애플리케이션이 생성되기 전 실행하고 싶은 JS 플러그인 포함 |   
+`store` | Vuex Store 파일을 포함하는 디렉토리 |
+`static` | 정적 파일들을 포함하는 디렉토리 / 내부의 파일들은 루트 패스( / )에 연결된다. |
+`middleware` | 페이지 또는 레이아웃을 렌더링 하기 전에 실행 할 수 있는 사용자 정의 함수를 포함 | 
+
