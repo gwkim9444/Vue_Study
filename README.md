@@ -233,7 +233,7 @@ Front 개발자로서 뷰의 고급 엔지니어가 되고자 목표한다면 �
 
 
 
-### Nuxt .js 란 ?  
+### Nuxt .js 란 ?
 ---
 >Vue.js App 개발을 보다 강력하고 사용하기 쉽게 만들어주는 `프레임 워크`  
 > __Nuxt.js__ 는 비동기 데이터,미들웨어,레이아웃 등과 같이 Client와 Server 사이에서 개발하는데 도임이 되는 많은 기능을 제공  
@@ -259,3 +259,91 @@ Front 개발자로서 뷰의 고급 엔지니어가 되고자 목표한다면 �
 >vue-loader - 싱글 컴포넌트 파일(SCF)을 처리하는 Webpack 로더  
 >babel-loader - Babel 트랜스파일링을 처리하는 Webpack 로더  
 >webpack - 모듈 번들러  
+
+
+## Nuxt 의 구성 요소와 기본 설정
+---
+![Nuxt](./img/Nuxt.png)  
+>Nuxt는 위와같은 디렉터리 구조를 가진다.
+Nuxt 패키지가 깔린 후 nuxt.config.js 안에서 랜더링 모드를 지정 할 수 있다.  
+### Rendering Mode 설정
+```javascript
+nuxt.config.js File
+    module.exports = {
+        mode: 'universal', // 렌더링 모드 선택 : 'universal' | 'spa'
+}
+```
+렌더링 모드를 Universal `('universal')` 또는 SPA (`'spa'`)로 변경 할 수 있다.  
+
+mode | 설명 |
+---|:---:| 
+`universal` | 서버 사이드 랜더링(SSR) 모드`SEO,접근성을 고려하는 프로젝트에 활용` | 
+`spa` | 싱글 페이지 애플리케이션(SPA) 모드 `클라이언트 사이드 렌더링(CSR)에 활용` |   
+
+### Head 설정
+```javascript
+nuxt.config.js File
+head: {
+
+  // 페이지 제목 설정
+  title: '페이지 제목',
+
+  // 메타데이터 설정
+  meta: [
+    // 언어 인코딩 설정
+    { charset: 'utf-8' },
+    // 반응형 웹 설정
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    // 페이지 설명 설정
+    // ※ hid 속성 값은 렌더링 후, data-hid 로 설정 (표준 속성이 아님)
+    //   hid 속성은 고유 식별자로 사용됨
+    { hid: 'description', name: 'description', content: '페이지 설명' }
+  ],
+
+  // 링크 설정
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    { rel: 'stylesheet', href: '불러들일 CSS 파일 URL' }
+  ],
+
+  // 스크립트 설정
+  script: [
+    { src: '불러들일 JavaScript 파일 URL' }
+  ]
+
+},
+```
+#### Head.titleTemplate
+컴포넌트에 개별 설정한 `title` 값 뒤에 동일한 서비스 명을 붙여야 할때 사용하면 좋음
+
+```javascript
+nuxt.config.js File
+module.exports = {
+    head: {
+        titleTemplate: '%s - Nuxt.js Guidebook',
+        // ...
+    }
+}
+```
+
+#### Head.titleTemplate
+컴포넌트에 개별 설정한 `title` 값 뒤에 동일한 서비스 명을 붙여야 할때 사용하면 좋음
+
+```javascript
+nuxt.config.js File
+module.exports = {
+    head: {
+        titleTemplate: '%s - Nuxt.js Guidebook',
+        // ...
+    }
+}
+```
+
+#### Head.buildDir
+빌드 디렉토리 위치를 임의로 설정 할 수 있음 __(default : `.nuxt`)__
+```javascript
+nuxt.config.js File
+export default {
+  buildDir: '../nuxt'
+}
+```
