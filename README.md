@@ -400,3 +400,5 @@ Nuxt.js App Project dir 구조 및 설정 파일은 다음과 같다.
 `static` | 정적 파일들을 포함하는 디렉토리 / 내부의 파일들은 루트 패스( / )에 연결된다. |
 `middleware` | 페이지 또는 레이아웃을 렌더링 하기 전에 실행 할 수 있는 사용자 정의 함수를 포함 | 
 
+### ES_Lint 수정 단축키
+  npx prettier --write "**/*.{vue,js}"
